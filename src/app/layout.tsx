@@ -34,7 +34,7 @@ const handlee = Handlee({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_YOUR_WEBSITE || ''),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_YOUR_WEBSITE || 'https://nguyentrongbut.io.vn/'),
     title: 'Nguyen Trong But | Frontend Developer | React & Next.js',
     description:
         "Nguyen Trong But is a Frontend Developer specializing in React, Next.js, and TypeScript. Explore his portfolio and featured projects.",
