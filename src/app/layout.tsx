@@ -34,7 +34,7 @@ const handlee = Handlee({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_YOUR_WEBSITE || 'https://nguyentrongbut.io.vn/'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_YOUR_WEBSITE || 'https://localhost:3000'),
     title: 'Nguyen Trong But | Frontend Developer | React & Next.js',
     description:
         "Nguyen Trong But is a Frontend Developer specializing in React, Next.js, and TypeScript. Explore his portfolio and featured projects.",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         type: "website",
-        url: new URL(process.env.NEXT_PUBLIC_YOUR_WEBSITE || ''),
+        url: new URL(process.env.NEXT_PUBLIC_YOUR_WEBSITE || 'https://localhost:3000'),
         siteName: 'Nguyen Trong But Portfolio',
         title: 'Nguyen Trong But | Frontend Developer | React & Next.js',
         description:
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
         ],
     },
     verification: {
-        google: process.env.NEXT_PUBLIC_VERIFICATION_GOOGLE || '',
+        google: process.env.NEXT_PUBLIC_VERIFICATION_GOOGLE,
     },
 };
 
