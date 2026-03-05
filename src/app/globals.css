@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+    --border: oklch(0.8847 0.0069 97.3627);
+    --ring: oklch(0.6171 0.1375 39.0427);
+}
+
+@theme inline {
+    --font-title: var(--font-title);
+    --font-primary: var(--font-primary);
+    --color-border: var(--border);
+    --color-ring: var(--ring);
+}
+
+@utility container {
+    width: 1139px;
+    max-width: calc(100% - 55px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: theme('screens.sm')) {
+        max-width: calc(100% - 100px);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+        scrollbar-width: thin;
+        scrollbar-color: var(--border) transparent;
+    }
+
+    body {
+        @apply font-primary antialiased select-none min-h-screen text-[#0C0C0C];
+    }
+
+    label {
+        @apply cursor-pointer;
+    }
+
+    input, textarea {
+        @apply focus:outline-none focus:border-b-[3px]
+    }
+}
+
+@layer utilities {
+    .bg-dot-pattern {
+        background-color: #ffffff;
+        background-image: radial-gradient(#d6d6d6 1px, transparent 1px);
+        background-size: 14px 14px;
+    }
+}
+
+@layer components {
+    .mt-section-rotate {
+        @apply mt-[90px] md:mt-24 lg:mt-[145px]
+    }
+
+    .mt-section {
+        @apply mt-[75px] md:mt-22 lg:mt-[145px]
+    }
+
+    .shadow-primary {
+        @apply shadow-[0_4px_10px_0_rgba(0,0,0,0.25)]
+    }
+
+    .border-layout {
+        @apply border-l-[3px] border-black pl-5 lg:pl-10
+    }
+
+    .arrow-icon-size {
+        @apply w-[38.77px] md:w-[50px] lg:w-[77.54px]
+    }
+
+    .arrow-icon-mb {
+        @apply mb-5 md:mb-6 lg:mb-8
+    }
+
+    .text-title {
+        @apply text-xl md:text-2xl lg:text-[32px] font-title font-bold bg-[#FFC9F0] inline-block shadow-[0_4px_10px_0_rgba(0,0,0,0.25)];
+    }
+
+    /*  contact form  */
+    .input-wrapper {
+        @apply flex items-end;
+    }
+
+    label {
+        @apply font-title font-bold px-1 text-base md:text-lg lg:text-[32px] border-l-[3px] border-l-black;
+    }
+
+    .input-field {
+        @apply h-full w-full border-b-[3px] border-b-black px-2.5 md:px-3 lg:px-[29px] py-1 font-title text-[15px] md:text-lg lg:text-[28px]
+    }
+}
