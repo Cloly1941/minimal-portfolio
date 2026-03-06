@@ -110,7 +110,10 @@ const DetailProject = async ({params}: TDetailProject) => {
                                fill
                                priority
                                placeholder='blur'
-                               className='object-cover rounded-md'/>
+                               className='object-cover rounded-md'
+                               sizes="(max-width: 1023px) 100vw,
+                                       calc(70vw - 28px)"
+                        />
                     </figure>
 
                     <div className='space-y-5 mt-6'>
