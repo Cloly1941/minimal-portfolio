@@ -37,7 +37,7 @@ const featuredProjects: TProjectCard[] = [
     {
         title: "Dashboard Ztruyen comic",
         href: `${route}/dashboard-ztruyen`,
-        image: "/ztruyen-admin.png",
+        image: "/dashboard-ztruyen.png",
         arrowColorClass: "text-[#E5C141]",
         buttonClass: "bg-[#E5C141] border-[#BB9C2A]",
     },

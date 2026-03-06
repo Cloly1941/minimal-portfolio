@@ -38,7 +38,7 @@ export const mockDataDetail: Detail[] = [
         name: "Dashboard Ztruyen comic",
         slug: "dashboard-ztruyen",
         description: "ZTruyen Comic Admin is a web application built with Next.js and Tailwind CSS, designed to manage the content of the ZTruyen Comic website.",
-        imageUrl: "/ztruyen-admin.png",
+        imageUrl: "/dashboard-ztruyen.png",
         version: "v1.0.0",
         techStack: ["React.js", "Tailwind CSS", "Shadcn ui", "TypeScript", "clsx", "Lucide Icon", "React Helmet", "React Router Dom", "react hot toast", "Tanstack Query", "React Hook Form", "Zod"],
         linkDemo: "https://admin.ztruyen.io.vn",
