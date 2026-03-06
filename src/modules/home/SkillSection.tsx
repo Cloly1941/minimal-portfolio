@@ -1,6 +1,9 @@
 // ** Next
 import Image from "next/image";
 
+// ** Images
+import arrowIcon from "@/public/arrow.svg"
+
 type TSkillCard = {
     title: string
     bg: string
@@ -50,7 +53,7 @@ const SkillSection = () => {
     return (
         <section className='mt-[75px] md:mt-22 lg:mt-[110px]'>
             <h2 className='text-title arrow-icon-mb'>My skills?</h2>
-            <Image src='/arrow.svg' alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
+            <Image src={arrowIcon} alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
                    className='-rotate-90 arrow-icon-size'/>
             <div
                 className='mt-4 md:mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-9 sm:gap-y-12 md:gap-y-15 lg:gap-y-16'>

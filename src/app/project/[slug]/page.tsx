@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: TDetailProject): Promise<Meta
             siteName: "Nguyen Trong But Portfolio",
             images: [
                 {
-                    url: detailProject.imageUrl,
+                    url: detailProject.imgUrl,
                     width: 1200,
                     height: 630,
                     alt: detailProject.name,
@@ -84,7 +84,7 @@ export async function generateMetadata({ params }: TDetailProject): Promise<Meta
             card: "summary_large_image",
             title,
             description,
-            images: [detailProject.imageUrl],
+            images: [detailProject.imgUrl],
         },
     };
 }
@@ -105,8 +105,11 @@ const DetailProject = async ({params}: TDetailProject) => {
                     <h1 className='font-title font-bold text-2xl sm:text-3xl lg:text-4xl line-clamp-2'>{detailProject.name}</h1>
 
                     {/* Image Prj */}
-                    <figure className='relative h-[250px] sm:h-[350px] lg:h-[450px] mt-4'>
-                        <Image src={detailProject.imageUrl} alt={`${detailProject.name} | 'Nguyen Trong But'`} fill
+                    <figure className='relative h-[250px] sm:h-[350px] lg:h-[450px] mt-4 rounded-md'>
+                        <Image src={detailProject.imageUrl} alt={`${detailProject.name} | 'Nguyen Trong But'`}
+                               fill
+                               priority
+                               placeholder='blur'
                                className='object-cover rounded-md'/>
                     </figure>
 

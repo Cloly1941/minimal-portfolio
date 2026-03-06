@@ -7,15 +7,23 @@ import Button from "@/components/common/Button";
 // ** Icon
 import {ExternalLink} from "lucide-react";
 
+// ** Images
+import avatar from "@/public/avatar.png"
+import arrowIcon from "@/public/arrow.svg"
+
 const CtaAreaSection = () => {
     return (
         <section className='flex flex-col lg:flex-row justify-between items-end'>
             <div className='w-full lg:w-[41%]'>
                 <div className='flex items-center gap-1 md:gap-3 lg:gap-5 -rotate-[5.18deg]'>
-                    <Image src='/avatar.png' alt='Nguyen Trong But Avatar' width={120} height={106}
+                    <Image src={avatar} alt='Nguyen Trong But Avatar'
+                           width={120} height={106}
+                           priority
                            className='w-[80px] md:w-[100px] lg:w-[120px]'
                     />
-                    <Image src='/arrow.svg' alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
+                    <Image src={arrowIcon} alt='Arrow Icon | Nguyen Trong But'
+                           width={77.54} height={45.12}
+                           priority
                            className='-rotate-12 arrow-icon-size'/>
                     <span className='text-title'>nguyentrongbut</span>
                 </div>

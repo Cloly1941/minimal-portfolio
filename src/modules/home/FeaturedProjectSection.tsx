@@ -1,5 +1,5 @@
 // ** Next
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 // ** Components
 import Button from "@/components/common/Button";
@@ -9,10 +9,16 @@ import ArrowIcon from "@/components/icons/ArrowIcon";
 import {cn} from "@/lib/utils";
 import Link from "next/link";
 
+// ** Images
+import portfolioImg from "@/public/portfolio.png";
+import ztruyenImg from "@/public/ztruyen.png";
+import dashboardImg from "@/public/dashboard-ztruyen.png";
+import prjImg from "@/public/prj.png";
+
 type TProjectCard = {
     title: string,
     href: string,
-    image: string,
+    image: StaticImageData,
     arrowColorClass: string,
     buttonClass: string,
 }
@@ -23,28 +29,28 @@ const featuredProjects: TProjectCard[] = [
     {
         title: "Portfolio",
         href: `${route}/portfolio`,
-        image: "/portfolio.png",
+        image: portfolioImg,
         arrowColorClass: "text-[#F072CD]",
         buttonClass: "bg-[#F072CD] border-[#0F0F0F]",
     },
     {
         title: "Ztruyen Comic",
         href: `${route}/ztruyen-comic`,
-        image: "/ztruyen.png",
+        image: ztruyenImg,
         arrowColorClass: "text-[#5AB5E8]",
         buttonClass: "bg-[#5AB5E8] border-[#1C6AB1]",
     },
     {
         title: "Dashboard Ztruyen comic",
         href: `${route}/dashboard-ztruyen`,
-        image: "/dashboard-ztruyen.png",
+        image: dashboardImg,
         arrowColorClass: "text-[#E5C141]",
         buttonClass: "bg-[#E5C141] border-[#BB9C2A]",
     },
     {
         title: "Template free",
         href: `${route}/template-free`,
-        image: "/prj.png",
+        image: prjImg,
         arrowColorClass: "text-[#7CF072]",
         buttonClass: "bg-[#7CF072] border-[#4ED543]",
     },
@@ -75,6 +81,8 @@ const FeaturedProjectSection = () => {
                                    src={project.image}
                                    alt={`${project.title} | Nguyen Trong But`}
                                    fill
+                                   placeholder='blur'
+                                   sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                    loading='lazy'
                                    className="object-cover rounded-md"
                                />

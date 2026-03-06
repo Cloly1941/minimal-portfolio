@@ -4,6 +4,9 @@ import Image from "next/image";
 // ** lib
 import {cn} from "@/lib/utils";
 
+// ** Images
+import arrowIcon from "@/public/arrow.svg"
+
 type TExperience = {
     id: number;
     title: string;
@@ -52,7 +55,7 @@ const WorkExperienceSection = () => {
                 {/* Title */}
                 <div className='w-full lg:w-[26%] lg:pt-10'>
                     <h2 className='text-title arrow-icon-mb'>Work Experience</h2>
-                    <Image src='/arrow.svg' alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
+                    <Image src={arrowIcon} alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
                            className='-rotate-100 lg:-rotate-140 arrow-icon-size lg:ml-auto mr-12'/>
                     <p className='mt-5 lg:mt-12 text-base lg:text-2xl leading-snug'>Have been front-end developer since
                         my past 4 years</p>

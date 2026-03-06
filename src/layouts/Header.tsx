@@ -7,7 +7,7 @@ import Navbar from "@/layouts/Navbar";
 const Header = () => {
     return (
         <header className='container pt-12 flex justify-between sm:justify-end items-center sm:gap-[159px] border-layout'>
-            <Logo/>
+            <Logo priority={true}/>
             <Navbar/>
         </header>
     )

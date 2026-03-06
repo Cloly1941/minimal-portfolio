@@ -96,6 +96,6 @@
 
     /*  detail  */
     .border-detail {
-        @apply border-[3px] border-black rounded-md p-10
+        @apply border-[3px] border-black rounded-md p-6 sm:p-10
     }
 }
