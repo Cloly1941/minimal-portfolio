@@ -84,7 +84,6 @@ const FeaturedProjectSection = () => {
                                    alt={`${project.title} | Nguyen Trong But`}
                                    fill
                                    placeholder='blur'
-                                   sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                    loading='lazy'
                                    className="object-cover rounded-md"
                                />
@@ -108,6 +107,7 @@ const FeaturedProjectSection = () => {
                                             className={cn("mt-[22px]", project.buttonClass)}
                                         >
                                             View Detail
+                                            <span className="sr-only">for {project.title} project</span>
                                         </Button>
                                     </Link>
                                 </div>

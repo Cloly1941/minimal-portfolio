@@ -50,6 +50,10 @@
         background-image: radial-gradient(#d6d6d6 1px, transparent 1px);
         background-size: 14px 14px;
     }
+    .sr-only {
+        @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+        clip: rect(0, 0, 0, 0);
+    }
 }
 
 @layer components {

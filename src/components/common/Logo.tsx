@@ -8,9 +8,10 @@ import logo from "@/public/Logo.svg";
 type TLogo = {
     priority?: boolean
     lazy?: boolean
+    heading?: boolean
 }
 
-const Logo = ({priority = false, lazy = false}: TLogo) => {
+const Logo = ({priority = false, lazy = false, heading = false}: TLogo) => {
     return (
         <Link href='/' className="flex items-center gap-2 md:gap-3 lg:gap-[15px]">
             <Image src={logo} alt="Nguyen Trong But Portfolio Logo"
@@ -19,7 +20,11 @@ const Logo = ({priority = false, lazy = false}: TLogo) => {
                    loading={lazy ? 'lazy' : 'eager'}
                    className="h-[27px] md:h-[38px] lg:h-[49px]"
             />
-            <h1 className="font-title font-bold text-xl md:text-2xl lg:text-4xl">nguyentrongbut</h1>
+            {heading ? (
+                <h1 className="font-title font-bold text-xl md:text-2xl lg:text-4xl">nguyentrongbut</h1>
+            ): (
+                <span className="font-title font-bold text-xl md:text-2xl lg:text-4xl">nguyentrongbut</span>
+            )}
         </Link>
     )
 }
