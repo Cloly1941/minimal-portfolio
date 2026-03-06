@@ -18,7 +18,7 @@ const Button = ({children, variant = 'primary', className, isLoading = false, di
 
     const variants = {
         primary:
-            "px-5 py-2.5 lg:px-8 lg:py-4.5 text-white bg-[#0C0C0C] text-base md:text-lg lg:text-xl font-semibold rounded-md hover:scale-105",
+            "px-5 py-2.5 lg:px-8 lg:py-4.5 text-white bg-[#0C0C0C] text-base md:text-lg lg:text-xl font-semibold rounded-sm hover:scale-105",
 
         mixed:
             "px-[13.7px] py-[6.59px] lg:px-4.5 lg:py-[9px] rounded-r-full rounded-bl-full rounded-tl-none text-[13.17px] lg:text-lg font-medium text-white bg-[#F072CD] border-[2.24px] border-[#DB4A90]",

@@ -4,9 +4,6 @@ type TListNav = {
 
 const listNav: TListNav[] = [
     {
-        name: 'Portfolio',
-    },
-    {
         name: 'Resume'
     }
 ]
