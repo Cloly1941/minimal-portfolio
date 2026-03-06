@@ -93,4 +93,9 @@
     .input-field {
         @apply h-full w-full border-b-[3px] border-b-black px-2.5 md:px-3 lg:px-[29px] py-1 font-title text-[15px] md:text-lg lg:text-[28px]
     }
+
+    /*  detail  */
+    .border-detail {
+        @apply border-[3px] border-black rounded-md p-10
+    }
 }

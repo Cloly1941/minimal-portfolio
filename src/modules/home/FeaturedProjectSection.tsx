@@ -7,6 +7,7 @@ import ArrowIcon from "@/components/icons/ArrowIcon";
 
 // ** Lib
 import {cn} from "@/lib/utils";
+import Link from "next/link";
 
 type TProjectCard = {
     title: string,
@@ -22,21 +23,21 @@ const featuredProjects: TProjectCard[] = [
     {
         title: "Portfolio",
         href: `${route}/portfolio`,
-        image: "/prj.png",
+        image: "/portfolio.png",
         arrowColorClass: "text-[#F072CD]",
         buttonClass: "bg-[#F072CD] border-[#0F0F0F]",
     },
     {
         title: "Ztruyen Comic",
         href: `${route}/ztruyen-comic`,
-        image: "/prj.png",
+        image: "/ztruyen.png",
         arrowColorClass: "text-[#5AB5E8]",
         buttonClass: "bg-[#5AB5E8] border-[#1C6AB1]",
     },
     {
         title: "Dashboard Ztruyen comic",
         href: `${route}/dashboard-ztruyen`,
-        image: "/prj.png",
+        image: "/ztruyen-admin.png",
         arrowColorClass: "text-[#E5C141]",
         buttonClass: "bg-[#E5C141] border-[#BB9C2A]",
     },
@@ -69,30 +70,36 @@ const FeaturedProjectSection = () => {
                             key={project.title}
                             className="border-[3px] border-black p-4 xl:p-5 rounded-md"
                         >
-                            <Image
-                                src={project.image}
-                                alt={`${project.title} | Nguyen Trong But`}
-                                width={365}
-                                height={318}
-                                className="w-full h-auto object-cover rounded-md"
-                            />
+                           <Link href={project.href} className='relative h-[318px] block'>
+                               <Image
+                                   src={project.image}
+                                   alt={`${project.title} | Nguyen Trong But`}
+                                   fill
+                                   loading='lazy'
+                                   className="object-cover rounded-md"
+                               />
+                           </Link>
 
                             <div className="flex justify-between mt-4 xl:mt-5">
-                                <h3 className="font-title font-bold text-xl xl:text-[28px] w-[50%] line-clamp-2">
-                                    {project.title}
-                                </h3>
+                                <Link href={project.href} className='font-title font-bold text-xl xl:text-[28px] w-[50%] line-clamp-2'>
+                                    <h3>
+                                        {project.title}
+                                    </h3>
+                                </Link>
 
                                 <div className="flex items-start">
                                     <ArrowIcon
                                         className={cn("-mr-1", project.arrowColorClass)}
                                     />
 
-                                    <Button
-                                        variant="mixed"
-                                        className={cn("mt-[22px]", project.buttonClass)}
-                                    >
-                                        View Detail
-                                    </Button>
+                                    <Link href={project.href}>
+                                        <Button
+                                            variant="mixed"
+                                            className={cn("mt-[22px]", project.buttonClass)}
+                                        >
+                                            View Detail
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </li>
