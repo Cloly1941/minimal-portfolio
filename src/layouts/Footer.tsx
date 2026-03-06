@@ -23,7 +23,7 @@ const Footer = () => {
     return (
        <div className='border-t-[3px] border-black'>
            <footer className='container flex flex-col md:flex-row justify-between md:items-center pt-[61px] lg:pt-[92px] border-layout pb-5 lg:pb-[35px]'>
-               <Logo/>
+               <Logo lazy={true}/>
                <div className='flex flex-col md:items-center gap-y-[11px] lg:gap-y-[39px] mt-[38px] md:mt-0'>
                    <ul className='flex gap-[22px] lg:gap-[77px]'>
                        {

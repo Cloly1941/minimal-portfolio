@@ -1,8 +1,11 @@
 // ** Next
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 // ** Images
 import arrowIcon from "@/public/arrow.svg"
+import pencil from "@/public/pencil.png"
+import eye from "@/public/eye.png"
+import blink from "@/public/blink.png"
 
 type TSkillCard = {
     title: string
@@ -11,7 +14,7 @@ type TSkillCard = {
     rotate: string
     titlePosition: string
     titleBg?: string
-    icon: string
+    icon: StaticImageData
     iconRotate?: string
     skills: string[]
 }
@@ -24,7 +27,7 @@ const skillList: TSkillCard[] = [
         rotate: '-rotate-4',
         titlePosition: 'top-[18%] -right-8',
         titleBg: 'bg-[#9DDCFF]',
-        icon: '/pencil.png',
+        icon: pencil,
         skills: ['HTML & CSS', 'JavaScript', 'TypeScript']
     },
     {
@@ -33,7 +36,7 @@ const skillList: TSkillCard[] = [
         border: 'border-[#5AB5E8]',
         rotate: 'rotate-4',
         titlePosition: '-top-5 right-6',
-        icon: '/eye.png',
+        icon: eye,
         iconRotate: 'rotate-8',
         skills: ['Express', 'Next.js & React', 'NestJS']
     },
@@ -44,7 +47,7 @@ const skillList: TSkillCard[] = [
         rotate: '-rotate-4',
         titlePosition: 'top-[18%] -left-4 lg:left-auto lg:-right-8',
         titleBg: 'bg-[#FFE68C]',
-        icon: '/blink.png',
+        icon: blink,
         skills: ['TailwindCSS', 'Antd & MUI', 'Shadcn UI']
     }
 ]
@@ -53,7 +56,9 @@ const SkillSection = () => {
     return (
         <section className='mt-[75px] md:mt-22 lg:mt-[110px]'>
             <h2 className='text-title arrow-icon-mb'>My skills?</h2>
-            <Image src={arrowIcon} alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
+            <Image src={arrowIcon} alt='Arrow Icon | Nguyen Trong But'
+                   priority
+                   width={77.54} height={45.12}
                    className='-rotate-90 arrow-icon-size'/>
             <div
                 className='mt-4 md:mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-9 sm:gap-y-12 md:gap-y-15 lg:gap-y-16'>
@@ -75,9 +80,11 @@ const SkillSection = () => {
                         <div className='flex flex-col'>
                             <Image
                                 src={card.icon}
-                                alt=''
+                                alt={`${card.title} Icon | Nguyen Trong But`}
+                                loading='lazy'
                                 width={49}
                                 height={55}
+                                placeholder='blur'
                                 className={`w-[34px] md:w-[42px] lg:w-[49px]
                                           ${card.iconRotate ?? ''}`}
                             />

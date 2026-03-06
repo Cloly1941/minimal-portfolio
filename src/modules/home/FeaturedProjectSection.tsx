@@ -64,7 +64,9 @@ const FeaturedProjectSection = () => {
                 {/* Title */}
                 <div className='w-full xl:w-[24%] xl:pt-[130px]'>
                     <h2 className='text-title arrow-icon-mb'>Featured Projects</h2>
-                    <Image src='/arrow.svg' alt='Arrow Icon | Nguyen Trong But' width={77.54} height={45.12}
+                    <Image src='/arrow.svg' alt='Arrow Icon | Nguyen Trong But'
+                           loading='lazy'
+                           width={77.54} height={45.12}
                            className='-rotate-100 xl:-rotate-140 arrow-icon-size xl:ml-auto mr-6'/>
                     <p className='mt-5 xl:mt-12 text-base xl:text-2xl leading-snug'>Have <b>4</b> featured personal projects</p>
                 </div>
