@@ -23,10 +23,18 @@ Designed to showcase your skills, work experience, and featured projects — all
 ## 📸 Demo
 
 ### 🏠 Home Page
-![Home page Preview](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772864164/nguyentrongbut.io.vn__ymjeer.png)
+| Device | Image                                                                                                            |
+|--------|------------------------------------------------------------------------------------------------------------------|
+| 🖥️ Desktop | ![Home page Preview](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772864164/nguyentrongbut.io.vn__ymjeer.png) |
+| 📱 Mobile | ![Home page Preview](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772870214/home-mobile_x4zzfi.png) |
 
 ### 📄 Project Detail Page
-![Detail page Preview](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772864164/nguyentrongbut.io.vn__1_c58gxo.png)
+| Device | Image                                                                                                            |
+|--------|------------------------------------------------------------------------------------------------------------------|
+| 🖥️ Desktop |![Detail page Preview](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772870558/nguyentrongbut.io.vn__1_f6nixx.png) |
+| 📱 Mobile | ![Detail page Preview](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772870214/detail-mobile_lk2epy.png) |
+
+
 
 ---
 
@@ -43,7 +51,7 @@ Designed to showcase your skills, work experience, and featured projects — all
 |--------|-------|
 | 🖥️ Desktop | ![Lighthouse Detail Desktop](http://res.cloudinary.com/dnj4p1bry/image/upload/v1772864617/detail-desk_dknjlk.png) |
 | 📱 Mobile | ![Lighthouse Detail Mobile](https://res.cloudinary.com/dnj4p1bry/image/upload/v1772864617/detail_mveugk.png) |
-
+> **⚠️ SEO Note:** SEO score achieves **100/100** when tested locally. On Cloudflare Pages, the score may slightly decrease (92-95) due to Cloudflare blocking bots from accessing `robots.txt`. This is a limitation of Cloudflare's security, not a code issue.
 ---
 
 ## 🚀 Tech Stack
