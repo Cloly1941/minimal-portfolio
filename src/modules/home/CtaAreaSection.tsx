@@ -1,5 +1,6 @@
 // ** Next
 import Image from "next/image";
+import Link from "next/link";
 
 // ** Component
 import Button from "@/components/common/Button";
@@ -35,10 +36,12 @@ const CtaAreaSection = () => {
             <div className='w-full lg:w-[42%] mt-6 md:mt-8 lg:mt-0'>
                 <p className='text-base md:text-lg lg:text-2xl leading-[140%] mb-[30px]'>I build responsive and user-friendly web
                     applications using <b>React</b>, <b>Next.js</b>, and modern frontend best practices.</p>
-                <Button>
-                    Resume
-                    <ExternalLink className='lg:size-7'/>
-                </Button>
+               <Link href='https://drive.google.com/file/d/15JzuiSdHC8rGzsxjGQyaKwwRpWGuNMpg/view?usp=drive_link' target='_blank'>
+                   <Button>
+                       Resume
+                       <ExternalLink className='lg:size-7'/>
+                   </Button>
+               </Link>
             </div>
         </section>
     )

@@ -143,13 +143,13 @@ const DetailProject = async ({params}: TDetailProject) => {
                     </div>
 
                     {/*  Group Btn  */}
-                    <Link href={detailProject.linkGithub} className='block mt-8'>
+                    <Link href={detailProject.linkGithub} className='block mt-8' target='_blank'>
                         <Button className='w-full hover:scale-none'>
                             View Code
                             <Github className='lg:size-7 lg:hidden xl:block'/>
                         </Button>
                     </Link>
-                    <Link href={detailProject.linkDemo} className='block mt-4'>
+                    <Link href={detailProject.linkDemo} className='block mt-4' target='_blank'>
                         <Button className='w-full hover:scale-none bg-white text-black'>
                             Live Preview
                             <ExternalLink className='lg:size-7 lg:hidden xl:block'/>
