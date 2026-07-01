@@ -3,25 +3,25 @@ import CtaAreaSection from "@/modules/home/CtaAreaSection";
 import SkillSection from "@/modules/home/SkillSection";
 import FeaturedProjectSection from "@/modules/home/FeaturedProjectSection";
 import ContactSection from "@/modules/home/ContactSection";
-// import WorkExperienceSection from "@/modules/home/WorkExperienceSection";
+import WorkExperienceSection from "@/modules/home/WorkExperienceSection";
 
 export default function Home() {
-    return (
-        <>
-            {/* Cta area */}
-            <CtaAreaSection/>
+  return (
+    <>
+      {/* Cta area */}
+      <CtaAreaSection />
 
-            {/* Skill */}
-            <SkillSection/>
+      {/* Skill */}
+      <SkillSection />
 
-            {/*  Featured Project  */}
-            <FeaturedProjectSection/>
+      {/*  Featured Project  */}
+      <FeaturedProjectSection />
 
-            {/*  Work Experience  */}
-            {/*<WorkExperienceSection/>*/}
+      {/*  Work Experience  */}
+      <WorkExperienceSection />
 
-            {/*  Contact  */}
-            <ContactSection/>
-        </>
-    );
+      {/*  Contact  */}
+      <ContactSection />
+    </>
+  );
 }
