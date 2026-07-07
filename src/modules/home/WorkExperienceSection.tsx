@@ -20,10 +20,10 @@ type TExperience = {
 const experiences: TExperience[] = [
   {
     id: 1,
-    title: "Full-Stack Developer Intern",
+    title: "Intern Full-Stack Developer",
     company: "Heyzor",
     description:
-      "Fixed bugs, maintained the project, clarified requirements with the Tech Lead, and performed testing.",
+      "Maintained and improved the web platform through frontend development, bug fixing, requirement clarification, testing, and Pull Request delivery.",
     date: "April 2026 – June 2026",
     bgClass: "bg-[#FFE68C]",
     borderClass: "border-[#EECD56]",

@@ -14,11 +14,11 @@ export default function Home() {
       {/* Skill */}
       <SkillSection />
 
-      {/*  Featured Project  */}
-      <FeaturedProjectSection />
-
       {/*  Work Experience  */}
       <WorkExperienceSection />
+
+      {/*  Featured Project  */}
+      <FeaturedProjectSection />
 
       {/*  Contact  */}
       <ContactSection />
