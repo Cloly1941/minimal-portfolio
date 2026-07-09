@@ -9,7 +9,7 @@ type TListNav = {
 const listNav: TListNav[] = [
   {
     name: "Resume",
-    link: "https://drive.google.com/file/d/1w9pXo0VTY8j-Nx6A01QRdJy9CFba5Sr3/view",
+    link: "https://drive.google.com/file/d/1TIEz2n5suHBZObg5A8CGHh4pP8yLjvNQ/view",
   },
 ];
 

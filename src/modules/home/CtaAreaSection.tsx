@@ -50,7 +50,7 @@ const CtaAreaSection = () => {
           <b>React</b>, <b>Next.js</b>, and modern frontend best practices.
         </p>
         <Link
-          href="https://drive.google.com/file/d/1w9pXo0VTY8j-Nx6A01QRdJy9CFba5Sr3/view"
+          href="https://drive.google.com/file/d/1TIEz2n5suHBZObg5A8CGHh4pP8yLjvNQ/view"
           target="_blank"
         >
           <Button>
